@@ -1,1 +1,2 @@
-psd/Merkury_Landing[[:space:]]Page.psd filter=lfs diff=lfs merge=lfs -text
+# psd/Merkury_Landing[[:space:]]Page.psd filter=lfs diff=lfs merge=lfs -text
+*.psd
