@@ -1,1 +1,1 @@
-# Participants works
+# Works of the participants
