@@ -273,7 +273,7 @@ header {
       top: 0;
       left: -40px;
       background-image: url(../sprite/sprite.png);
-      background-position: -172px -35px;
+      background-position: -126px -88px;
     }
   }
 }
@@ -370,7 +370,7 @@ header {
   top: 10px;
   left: 379px;
   background-image: url(../sprite/sprite.png);
-  background-position: -172px -129px;
+  background-position: -128px -134px;
   width: 14px;
   height: 23px;
 }
@@ -519,10 +519,10 @@ header {
     }
   }
   .enabled:before {
-    background-position: -172px -87px;
+    background-position: -104px -134px;
   }
   .disabled:before {
-    background-position: -172px -63px;
+    background-position: -80px -134px;
   }
 }
 
@@ -580,16 +580,16 @@ footer {
   .facebook {
     width: 9px;
     height: 17px;
-    background-position: -196px -63px;
+    background-position: -142px -134px;
   }
   .twitter {
     width: 18px;
     height: 16px;
-    background-position: -186px -129px;
+    background-position: -126px -116px;
   }
   .google_plus {
     width: 18px;
     height: 18px;
-    background-position: -172px -111px;
+    background-position: -154px -88px;
   }
 }

@@ -16,33 +16,21 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-Arrow left {
-  background-image: url(sprite.png);
-  background-position: -172px 0px;
-  width: 35px;
-  height: 35px;
-}
-.icon-Arrow right {
-  background-image: url(sprite.png);
-  background-position: -126px -88px;
-  width: 35px;
-  height: 35px;
-}
 .icon-checkbox-deny {
   background-image: url(sprite.png);
-  background-position: -172px -63px;
+  background-position: -80px -134px;
   width: 24px;
   height: 24px;
 }
 .icon-checkbox-ok-big {
   background-image: url(sprite.png);
-  background-position: -172px -35px;
+  background-position: -126px -88px;
   width: 28px;
   height: 28px;
 }
 .icon-checkbox-ok-small {
   background-image: url(sprite.png);
-  background-position: -172px -87px;
+  background-position: -104px -134px;
   width: 24px;
   height: 24px;
 }
@@ -54,13 +42,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-fb-icon {
   background-image: url(sprite.png);
-  background-position: -196px -63px;
+  background-position: -142px -134px;
   width: 9px;
   height: 17px;
 }
 .icon-google-icon {
   background-image: url(sprite.png);
-  background-position: -172px -111px;
+  background-position: -154px -88px;
   width: 18px;
   height: 18px;
 }
@@ -84,13 +72,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-right-arrow-big {
   background-image: url(sprite.png);
-  background-position: -172px -129px;
+  background-position: -128px -134px;
   width: 14px;
   height: 23px;
 }
 .icon-twitter-icon {
   background-image: url(sprite.png);
-  background-position: -186px -129px;
+  background-position: -126px -116px;
   width: 18px;
   height: 16px;
 }
