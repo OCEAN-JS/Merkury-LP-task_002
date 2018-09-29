@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const dropZone = document.querySelector('.drop__zone');
+  const dropZone = document.querySelector('.tasks__drop-zone');
   let movingElement;
 
   const countTasks = () => {
@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const completedBlock = document.getElementById('completed');
     const inProgressNode = document.getElementById('tasksInProgressNumber');
     const completedNode = document.getElementById('completedTasksNumber');
-    inProgressNode.textContent = `(${inProgressBlock.querySelectorAll('.task').length})`;
-    completedNode.textContent = `(${completedBlock.querySelectorAll('.task').length})`;
+    inProgressNode.textContent = `(${inProgressBlock.querySelectorAll('.tasks__task').length})`;
+    completedNode.textContent = `(${completedBlock.querySelectorAll('.tasks__task').length})`;
   };
 
   countTasks();
@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const dragEnd = () => {
     dropZone.removeEventListener('drop', dragDrop);
-    dropZone.classList.remove('drop__zone-visible');
+    dropZone.classList.remove('tasks__drop-zone_visible');
   };
 
   const dragStart = (event) => {
     movingElement = event.currentTarget;
     event.dataTransfer.effectAllowed = 'move';
-    dropZone.classList.add('drop__zone-visible');
+    dropZone.classList.add('tasks__drop-zone_visible');
     let oppositeArea;
     if (event.currentTarget.parentNode.id === 'inProgress') {
       oppositeArea = event.currentTarget.parentNode.parentNode.querySelector('#completed');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   (() => {
-    const draggableElements = [...document.querySelectorAll('.task')];
+    const draggableElements = [...document.querySelectorAll('.tasks__task')];
     draggableElements.forEach(el => el.addEventListener('dragstart', dragStart));
     draggableElements.forEach(el => el.addEventListener('dragend', dragEnd));
   })();

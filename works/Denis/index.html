@@ -10,51 +10,52 @@
 </head>
 <body>
   <header>
-    <div class="header_nav">
+    <div class="header__top">
       <a href="#"><img src="build/img/logo.png" alt="Merkury"></a>
       <nav>
-        <a class="header_link" href="#">Features</a>
-        <a class="header_link" href="#">Pricing</a>
-        <a class="header_link" href="#">Blog</a>
-        <a class="header_link" href="#">Contact</a>
-        <a class="login_btn" href="#">Login</a> 
+        <a class="header__link" href="#">Features</a>
+        <a class="header__link" href="#">Pricing</a>
+        <a class="header__link" href="#">Blog</a>
+        <a class="header__link" href="#">Contact</a>
+        <a class="header__login-btn" href="#">Login</a> 
       </nav>
     </div>
     <h1>Grow Your business with Merkury</h1>
     <h3>Your partner in crime!</h3>
-    <a href="#" class="get_start_btn">Get started</a>
-    <div class="chart"></div>
+    <a href="#" class="header__get-started-btn">Get started</a>
+    <div class="header__chart"></div>
   </header>
 
-  <section class="container features_grid">
-    <div class="feature">
-      <div class="feature_icon_1"></div>
+  <section class="container features">
+    <div class="features__feature">
+      <div class="features__icon1"></div>
       <h5>Manage your workflow</h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <a href="#">See more</a>
     </div>
-    <div class="feature">
-      <div class="feature_icon_2"></div>
+    <div class="features__feature">
+      <div class="features__icon2"></div>
       <h5>Analytics &amp; insights</h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <a href="#">See more</a>  
     </div>
-    <div class="feature">
-      <div class="feature_icon_3"></div>
+    <div class="features__feature">
+      <div class="features__icon3"></div>
       <h5>Organize your deadlines</h5>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <a href="#">See more</a>
     </div>
   </section>
   
-  <section class="wrapper_browser">
-    <div class="container container_flex browser">
+
+  <section class="wrapper-browser">
+    <div class="container container_flex wrapper-browser__browser">
       <div>
         <h2>All You need is a browser!</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-        <p class="blue_font_paragraph">Lorem ipsum dolor sit amet consectetur</p>
-        <p class="blue_font_paragraph">Ut enim ad minim veniam quis nostrud</p>
+        <p class="wrapper-browser__blue-font-paragraph">Lorem ipsum dolor sit amet consectetur</p>
+        <p class="wrapper-browser__blue-font-paragraph">Ut enim ad minim veniam quis nostrud</p>
       </div>
       <div>
         <img src="build/img/desktop.png" alt="Desktop image">
@@ -63,43 +64,82 @@
   </section>
 
   <section class="tasks">
-    <div class="drop__zone">
+    <div class="tasks__drop-zone">
       Drop here
     </div>
-    <div class="tasks_container">      
+    <div class="tasks__container">      
       <div id="inProgress">
         <h3>In Progress<span id="tasksInProgressNumber"></span></h3>
-        <div class="big_arrow_right"></div>
-        <div class="task" draggable = true><img src="build/img/task_in_progress.png" alt="Task in progress"></div>
-        <div class="task" draggable = true><img src="build/img/task_in_progress_2.png" alt="Task in progress"></div>
-        <div class="task" draggable = true><img src="build/img/task_delayed.png" alt="Delayed task"></div>
+        <div class="tasks__big-arrow-right"></div>
+        <div class="tasks__task" draggable = true><img src="build/img/task_in_progress.png" alt="Task in progress"></div>
+        <div class="tasks__task" draggable = true><img src="build/img/task_in_progress_2.png" alt="Task in progress"></div>
+        <div class="tasks__task" draggable = true><img src="build/img/task_delayed.png" alt="Delayed task"></div>
       </div>
       <div id="completed">
         <h3>Completed<span id="completedTasksNumber"></span></h3>
-        <div class="task" draggable = true><img src="build/img/task_done.png" alt="Task done"></div>
-        <div class="task" draggable = true><img src="build/img/task_done_2.png" alt="Task done"></div>
+        <div class="tasks__task" draggable = true><img src="build/img/task_done.png" alt="Task done"></div>
+        <div class="tasks__task" draggable = true><img src="build/img/task_done_2.png" alt="Task done"></div>
       </div>
-      <div class="drop">
+      <div class="tasks__drop">
         <h2>Drag &amp; Drop</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <a href="#"><img src="build/img/arrow_left.png" alt="left arrow"></a>
-        <a href="#"><img src="build/img/arrow_right.png" alt="right arrow"></a>
+        <div class="tasks__carousel">
+
+          <input type="radio" name="carousel" id="carousel-1" class="tasks__carousel-active" hidden checked>
+          <div class="tasks__carousel-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="tasks__carousel-controls">
+              <label for="carousel-3">
+                <img src="build/img/arrow_left.png" alt="left arrow">
+              </label>
+              <label for="carousel-2">
+                <img src="build/img/arrow_right.png" alt="right arrow">
+              </label>
+            </div>
+          </div>
+          
+          <input type="radio" name="carousel" id="carousel-2" class="tasks__carousel-active" hidden>
+          <div class="tasks__carousel-item">
+            <p>Eligendi voluptatem architecto repellendus qui maxime libero neque tempora est accusamus at nesciunt, porro vel quod repudiandae magnam, minus officia aspernatur accusantium. </p>
+            <div class="tasks__carousel-controls">
+              <label for="carousel-1">
+                <img src="build/img/arrow_left.png" alt="left arrow">
+              </label>
+              <label for="carousel-3">
+                <img src="build/img/arrow_right.png" alt="right arrow">
+              </label>
+            </div>
+          </div>
+
+          <input type="radio" name="carousel" id="carousel-3" class="tasks__carousel-active" hidden>
+          <div class="tasks__carousel-item">
+            <p>Sequi atque aliquam provident distinctio, sit, totam doloribus dignissimos natus aspernatur, voluptas tempora pariatur? Temporibus a dolore minima sapiente exercitationem facilis at!</p>
+            <p>Obcaecati, molestiae, commodi quaerat dolorem ipsa eius distinctio repellat assumenda dolor eveniet ratione suscipit nostrum officiis facere.</p>
+            <div class="tasks__carousel-controls">
+              <label for="carousel-2">
+                <img src="build/img/arrow_left.png" alt="left arrow">
+              </label>
+              <label for="carousel-1">
+                <img src="build/img/arrow_right.png" alt="right arrow">
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="wrapper_template">
+  <section class="template">
     <div class="container">
       <h2>Powerfull PSD Template</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
-      <div class="screenshot">
-        <div class="left_pointer">
+      <div class="template__screenshot">
+        <div class="template__left-pointer">
           <h6>Clean &amp; modern layout</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
         </div>
-        <div class="right_pointer">
+        <div class="template__right-pointer">
           <h6>Easy to customize</h6>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
         </div>
@@ -107,53 +147,53 @@
     </div>
   </section>
 
-  <section class="wrapper_prices">
+  <section class="prices">
     <div class="container">
       <h2>Check our pricing!</h2>
       <div class="container_flex">
-        <div class="price">
+        <div class="prices__price">
           <h5>Bronze plan</h5>
           <h6>$<span>19<span> /mon</span></span></h6>
-          <p class="enabled">Lorem ipsum dolor sit am</p>
-          <p class="enabled">Lorem ipsum dolor sit am</p>
-          <p class="disabled">Lorem ipsum dolor sit am</p>
-          <p class="disabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__enabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__enabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__disabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__disabled">Lorem ipsum dolor sit am</p>
         </div>
-        <div class="price">
+        <div class="prices__price">
           <h5>Silver plan</h5>
           <h6>$<span>49<span> /mon</span></span></h6>
-          <p class="enabled">Lorem ipsum dolor sit am</p>
-          <p class="enabled">Lorem ipsum dolor sit am</p>
-          <p class="enabled">Lorem ipsum dolor sit am</p>
-          <p class="disabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__enabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__enabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__enabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__disabled">Lorem ipsum dolor sit am</p>
         </div>
-        <div class="price">
+        <div class="prices__price">
           <h5>Gold plan</h5>
           <h6>$<span>99<span> /mon</span></span></h6>
-          <p class="enabled">Lorem ipsum dolor sit am</p>
-          <p class="enabled">Lorem ipsum dolor sit am</p>
-          <p class="enabled">Lorem ipsum dolor sit am</p>
-          <p class="enabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__enabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__enabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__enabled">Lorem ipsum dolor sit am</p>
+          <p class="prices__enabled">Lorem ipsum dolor sit am</p>
         </div>
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-      <div class="wrapper_line">
-        <a class="get_start_btn get_start_btn__shadowed" href="">Join now!</a>
+      <div class="prices__line">
+        <a class="header__get-started-btn header__get-started-btn_shadowed" href="">Join now!</a>
         <hr/>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="container">
+    <div class="container footer__container">
       <div>&copy; 2016 Merkury All Right Reserved</div>
       <div>
         <a href="#">Pricing</a>
         <a href="#">Blog</a>
         <a href="#">Contact</a>
-        <a class="facebook" href="#"></a>
-        <a class="twitter" href="#"></a>
-        <a class="google_plus" href="#"></a>
+        <a class="footer__facebook" href="#"></a>
+        <a class="footer__twitter" href="#"></a>
+        <a class="footer__google-plus" href="#"></a>
       </div>
     </div>
   </footer>
